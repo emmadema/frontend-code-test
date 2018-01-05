@@ -1,7 +1,15 @@
-div{
+nav{
 	color: blue;
 }
 
 footer {
 	color: blue;
+}
+
+.search{
+	background-color: #3c7177;
+	border-radius: 3px;
+	padding: 3px 60px 3px 60px;
+	border-color: #3c7177;
+	color: white;
 }
