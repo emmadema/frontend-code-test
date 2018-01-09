@@ -83,11 +83,11 @@
 				<ul>
 					<li>Bob</li>
 					<li>Sally
-						<ul>
+						<ul class="first">
 							<li>Car</li>
 							<li>Boat</li>
 							<li>Bike
-								<ul>
+								<ul class="second">
 									<li>Red</li>
 									<li>Green</li>
 									<li>Blue</li>
@@ -149,15 +149,25 @@ Please also write your jquery in a no conflict manner.
 <script type="text/javascript">
 	jQuery(function($) {
 		/**************************************
-		Question One
+		Question 1
 		get all li elements by id content 
 		get the last elemnt in the li
 		change the css to color red
 		***************************************/
 		$('#content li').last().css("color", "red");
-
 		
+		/******************************************
+		Question 2
+		******************************************/
+		$('#content2 ul:nth-child(1)').each(function(i){
+			if(i<2){ this.style.color = "red";
+			} else {
+				this.style.color = "black";
+			}
+		});
 	});
+
+	
 </script>
 </body>
 </html>
