@@ -1,15 +1,128 @@
-nav{
-	color: blue;
+/***************
+Large- Laptop
+***************/
+@media screen and (min-device-width: 1024px) { 
+
+	#mainLogo {
+		height: 80px;
+		margin: 10px 30px;
+	}
+
+	.navbar{
+		background-color: #AAAAAA;
+		font-size: 10px;
+	}
+
+	#textBox {
+		padding: 5px 10px;
+		width: 200px;
+		margin-left: 10%;
+	}
+
+	.search{
+		background-color: #3c7177;
+		border-radius: 2px;
+		padding: 8px 55px 8px 55px;
+		border-color: #3c7177;
+		color: white;
+		font-size: 15px;
+		margin-right: 45%;
+	}
+
+	#realtorImage {
+		height: 280px;
+		width: 200px;
+		margin-left: 11.2%;
+	}
+
+	footer {
+		background-color: #3c7177;
+		padding: 4%;
+	}
 }
 
-footer {
-	color: blue;
+/**************
+Meduim- Tablet
+**************/
+@media screen and (max-device-width: 1023px) and (min-device-width: 415px) { 
+
+	#mainLogo {
+		height: 80px;
+		margin: 10px 30px;
+	}
+
+	.navbar{
+		background-color: #AAAAAA;
+		font-size: 10px;
+	}
+
+	#textBox {
+		padding: 5px 10px;
+		width: 200px;
+		margin-left: 10%;
+	}
+
+	.search{
+		background-color: #3c7177;
+		border-radius: 2px;
+		padding: 8px 55px 8px 55px;
+		border-color: #3c7177;
+		color: white;
+		font-size: 15px;
+		margin-right: 45%;
+	}
+
+	#realtorImage {
+		height: 280px;
+		width: 200px;
+		margin-left: 11.2%;
+	}
+
+	footer {
+		background-color: #3c7177;
+		padding: 4%;
+	}
 }
 
-.search{
-	background-color: #3c7177;
-	border-radius: 3px;
-	padding: 3px 60px 3px 60px;
-	border-color: #3c7177;
-	color: white;
+/*************
+Small- Phone
+*************/
+@media screen and (max-device-width: 414px) { 
+
+	#mainLogo {
+		height: 80px;
+		margin: 10px 30px;
+	}
+
+	.navbar{
+		background-color: #AAAAAA;
+		font-size: 10px;
+	}
+
+	#textBox {
+		padding: 5px 10px;
+		width: 200px;
+		margin-left: 10%;
+	}
+
+	.search{
+		background-color: #3c7177;
+		border-radius: 2px;
+		padding: 8px 55px 8px 55px;
+		border-color: #3c7177;
+		color: white;
+		font-size: 15px;
+		margin-right: 45%;
+	}
+
+	#realtorImage {
+		height: 280px;
+		width: 200px;
+		margin-left: 11.2%;
+	}
+
+	footer {
+		background-color: #3c7177;
+		padding: 4%;
+	}
 }
