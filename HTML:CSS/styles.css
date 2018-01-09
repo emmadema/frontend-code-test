@@ -26,18 +26,36 @@ Large- Laptop
 		border-color: #3c7177;
 		color: white;
 		font-size: 15px;
-		margin-right: 45%;
+		margin-left: -25%;
+	}
+
+	#searchBarList li{
+		text-decoration: underline;
+		color: white;
+		list-style: none;
+		display: inline;
+		margin-left: -10%;
+	}
+
+	.searchItem {
+		padding: 5px 30px;
+		display: inline;
+		margin-right: 40px;
+		font-size: 15px;
 	}
 
 	#realtorImage {
 		height: 280px;
 		width: 200px;
-		margin-left: 11.2%;
+		margin-left: 10.8%;
 	}
 
 	footer {
 		background-color: #3c7177;
-		padding: 4%;
+		padding: 2%;
+		color: white;
+		font-size: 12px;
+		letter-spacing: 1px;
 	}
 }
 

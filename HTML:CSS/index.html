@@ -17,14 +17,19 @@
 
 	<!--Search Bar-->
 	<nav class="navbar">
-		<input id="textBox" type="text" class="form control" id="search" placeholder="Address, City, Zip, or MLS#">
+		<input id="textBox" type="text" class="form control lg-col-3" id="search" placeholder="Address, City, Zip, or MLS#">
 		<button  class="search lg-col-2">Search</button>
+		<ul id="searchBarList">
+			<li class="searchItem">NEW LISTINGS</li>
+			<li class="searchItem">OPEN HOUSES</li>
+			<li class="searchItem">MAP SEARCH</li>
+		</ul>
 	</nav>
 
 
 	<!--Contact Me-->
 	<div class="contactMe">
-		<img id="realtorImage" src="./Assets/Realtor Image/saramortensun.jpg">
+		<img id="realtorImage" class="lg-col-3" src="./Assets/Realtor Image/saramortensun.jpg">
 		<h1>Jane Smith</h1>
 		<h5>Realtor</h5>
 		<ul>
@@ -38,6 +43,19 @@
 	<!--Main Info-->
 
 	<!--Footer-->
-	<footer class="footer fixed-bottom">Search</footer>
+	<footer class="footer fixed-bottom">
+		<div>
+			<img src="./Assets/SVGs/contact.svg">1-800-234-4567</img>
+			<p>5678 Main Street, Denver, CO 80123</p>
+		</div>
+		<div>
+			<ul>
+				<li>Site Map</li>
+				<li>Terms of Use</li>
+				<li>Privacy Policy</li>
+			</ul>
+			<p>@2016 TEN Realty, All Rights Reserved.</p>
+		</div>
+	</footer>
 </body>
 </html>
