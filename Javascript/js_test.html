@@ -83,11 +83,11 @@
 				<ul>
 					<li>Bob</li>
 					<li>Sally
-						<ul class="first">
+						<ul>
 							<li>Car</li>
 							<li>Boat</li>
 							<li>Bike
-								<ul class="second">
+								<ul>
 									<li>Red</li>
 									<li>Green</li>
 									<li>Blue</li>
@@ -148,23 +148,72 @@ Please also write your jquery in a no conflict manner.
 -->
 <script type="text/javascript">
 	jQuery(function($) {
-		/**************************************
+		/***************************************************
 		Question 1
 		get all li elements by id content 
 		get the last elemnt in the li
 		change the css to color red
-		***************************************/
+		***************************************************/
 		$('#content li').last().css("color", "red");
-		
-		/******************************************
+
+		/**************************************************
 		Question 2
-		******************************************/
-		$('#content2 ul:nth-child(1)').each(function(i){
-			if(i<2){ this.style.color = "red";
-			} else {
-				this.style.color = "black";
-			}
+		**************************************************/
+		// $('#content2 ul .first').each(function(i){
+		// 	if(i<){ this.style.color = "red";
+		// 	} else {
+		// 		this.style.color = "black";
+		// 	}
+		// });
+
+		/**************************************************
+		Question 3
+		**************************************************/
+
+		/*************************************************
+		Question 4
+		get the height and with of div by the div id
+		appened each to the page
+		*************************************************/
+
+		var height = $("#setDims").height();
+		var width = $("#setDims").width();
+		$("#setDims").append(" Height: ", height);
+		$("#setDims").append(" Width: ", width);
+
+		/**************************************************
+		Question 5
+		on click toggle the class from clicked to not clicked
+		set a new var to console log each time it is clicked
+		****************************************************/
+
+		$("#clickEventLink").on("click", function(event){
+			$('#clickEventLink').toggleClass("clicked not-clicked");
+			var clickClass = $("#clickEventLink").attr("class");
+			console.log(clickClass);
 		});
+
+		/***************************************************
+		Question 6
+		****************************************************/
+		function loadJSON(callback) {
+			var food = new XMLHttpRequest();
+			food.overrideMimeType("ajax_return");
+			food.open('GET', 'my_data.json', true);
+			food.onreadystatechange = function () {
+				if (food.readyState == 4 && food.status == "200") {
+					callback(food.responseText);
+				}
+			};
+			food.send(null);
+		}
+
+		function init() {
+			loadJSON(function(res){
+				var json = JSON.parse(res);
+			});
+		}
+
 	});
 
 	
