@@ -1,5 +1,5 @@
 html .container {
-	margin: 0;
+
 }
 
 #mainLogo {
@@ -10,12 +10,13 @@ html .container {
 .navbar{
 	background-color: #AAAAAA;
 	font-size: 10px;
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
 }
 
 #textBox {
 	padding: 5px 10px;
-	width: 200px;
-	margin-left: 10%;
 }
 
 .search{
@@ -25,7 +26,7 @@ html .container {
 	border-color: #3c7177;
 	color: white;
 	font-size: 15px;
-	margin-left: -25%;
+	
 }
 
 #searchBarList li{
@@ -33,20 +34,18 @@ html .container {
 	color: white;
 	list-style: none;
 	display: inline;
-	margin-left: -10%;
 }
 
 .searchItem {
 	padding: 5px 30px;
 	display: inline;
-	margin-right: 40px;
+	
 	font-size: 15px;
 }
 
 #realtorImage {
 	height: 280px;
 	width: 200px;
-	margin-left: 10.8%;
 }
 
 footer {
