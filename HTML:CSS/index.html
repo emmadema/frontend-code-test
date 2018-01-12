@@ -10,15 +10,29 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
 </head>
 <body>
-	<div class="container-fluid"
+	
 		<!--Header-->
-
+	<div class="container-flex">
 		<div class="row" id="nav">
 			<img id="mainLogo" src="./Assets/SVGs/TEN-logo.svg">
+			<div>
+				<img src="./Assets/SVGs/contact.svg">
+				<h6>Contact</h6>
+			</div>
+			<div>
+				<img src="./Assets/SVGs/account.svg">
+				<h6>Account</h6>
+			</div>
+			<ul id="topBarList">
+				<li>SEARCH</li>
+				<li>COMMUNITIES</li>
+				<li>SERVICES</li>
+				<li>ABOUT US</li>
+			</ul>
 		</div>
-
+	</div>
 		<!--Search Bar-->
-		<nav class="navbar navbar-default navbar">
+		<nav class="navbar">
 			<input id="textBox" type="text" class="form control col-lg-3 col-md-3 col-sm-4" id="search" placeholder="Address, City, Zip, or MLS#">
 			<button  class="search col-lg-2 col-md-2 col-sm-2">Search</button>
 			<ul id="searchBarList" class="col-lg-7 col-md-7 col-sm-6">
@@ -31,7 +45,7 @@
 
 		<!--Contact Me-->
 		<div class="contactMe">
-			<img id="realtorImage" class="lg-col-3" src="./Assets/Realtor Image/saramortensun.jpg">
+			<img id="realtorImage" class="col-lg-3 col-md-3 col-sm-3" src="./Assets/Realtor Image/saramortensun.jpg">
 			<h1>Jane Smith</h1>
 			<h5>Realtor</h5>
 			<ul>
@@ -50,15 +64,15 @@
 				<img src="./Assets/SVGs/contact.svg">1-800-234-4567</img>
 				<p>5678 Main Street, Denver, CO 80123</p>
 			</div>
-		<div>
-			<ul>
-				<li>Site Map</li>
-				<li>Terms of Use</li>
-				<li>Privacy Policy</li>
-			</ul>
-			<p>@2016 TEN Realty, All Rights Reserved.</p>
-		</div>
-	</div>
-	</footer>
+			<div>
+				<ul>
+					<li>Site Map</li>
+					<li>Terms of Use</li>
+					<li>Privacy Policy</li>
+				</ul>
+				<p>@2016 TEN Realty, All Rights Reserved.</p>
+			</div>
+		</footer>
+	
 </body>
 </html>

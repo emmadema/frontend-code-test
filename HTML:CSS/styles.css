@@ -1,22 +1,26 @@
-html .container {
-
-}
-
 #mainLogo {
 	height: 80px;
 	margin: 10px 30px;
 }
 
+#nav {
+	text-align: center;
+	font-size: 10px;
+	color: #3c7177;
+}
+
+#topBarList {
+	display: inline;
+	list-style: none;
+}
 .navbar{
 	background-color: #AAAAAA;
 	font-size: 10px;
-	width: 100%;
-	margin: 0 auto;
-	display: inline-block;
 }
 
 #textBox {
 	padding: 5px 10px;
+	margin: 0 auto;
 }
 
 .search{
@@ -26,7 +30,7 @@ html .container {
 	border-color: #3c7177;
 	color: white;
 	font-size: 15px;
-	
+	margin: 0 auto;	
 }
 
 #searchBarList li{
@@ -39,7 +43,6 @@ html .container {
 .searchItem {
 	padding: 5px 30px;
 	display: inline;
-	
 	font-size: 15px;
 }
 
