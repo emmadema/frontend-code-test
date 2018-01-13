@@ -53,10 +53,22 @@ ul li {
 	text-decoration: none;
 }
 
+#phoneFooter {
+	float: left;
+	clear: both;
+	display: inline;
+}
+
+#footerSite {
+	clear: both;
+	display: inline;
+}
+
 footer {
 	background-color: #3c7177;
 	color: white;
 	font-size: 12px;
 	letter-spacing: 1px;
+	display: inline;
 }
 
