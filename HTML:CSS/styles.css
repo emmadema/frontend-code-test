@@ -1,3 +1,17 @@
+/***********
+   Overall
+***********/
+
+button {
+	color: white;
+	background-color: #3c7177;
+	border: none;
+}
+
+/***********
+   Header
+***********/
+
 #logoNav {
 	color: black;
 	font-size: 15px;
@@ -14,11 +28,7 @@
 	color: #3c7177;
 }
 
-button {
-	color: white;
-	background-color: #3c7177;
-	border: none;
-}
+
 
 #topBarList {
 	display: inline;
@@ -56,11 +66,6 @@ button {
 	display: inline;
 }
 
-#infoMainText {
- width: 50%;
- float: right;
-}
-
 #realtorImage {
 	height: 250px;
 	margin-left: 5%;
@@ -75,9 +80,22 @@ button {
 	background-color: #EEEEEE;
 }
 
+/**************
+   Main Info
+**************/
+
+#infoMainText {
+ width: 50%;
+ float: right;
+}
+
 #mainText {
 	margin-left: 5%;
 }
+
+/*************
+	Footer 
+*************/
 
 #leftFooter {
 	text-align: left;
