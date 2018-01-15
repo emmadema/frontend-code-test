@@ -154,21 +154,29 @@ Please also write your jquery in a no conflict manner.
 		get the last elemnt in the li
 		change the css to color red
 		***************************************************/
-		$('#content li').last().css("color", "red");
+		$('#content li').last().css('color', 'red');
 
 		/**************************************************
 		Question 2
 		**************************************************/
-		// $('#content2 ul .first').each(function(i){
-		// 	if(i<){ this.style.color = "red";
-		// 	} else {
-		// 		this.style.color = "black";
-		// 	}
-		// });
+		$('#content2 ul:eq(1)').children('li').css('color', 'red');
+
 
 		/**************************************************
 		Question 3
+		changing based on the select items
+		remove the new div each times the fucntion runs
+		set the dropDownValue to the value of the select menu
+		creat a new div in the feildset with the id of newDiv
+		appened the value of the var droDownVale to the newDiv
 		**************************************************/
+		
+		$('select').change(function() {
+			$('#newDiv').remove();
+			var dropDownValue = $('select').val();
+			$('fieldset').append('<div id="newDiv"></div>');
+		 	$('#newDiv').append(dropDownValue);
+		});
 
 		/*************************************************
 		Question 4
@@ -176,10 +184,10 @@ Please also write your jquery in a no conflict manner.
 		appened each to the page
 		*************************************************/
 
-		var height = $("#setDims").height();
-		var width = $("#setDims").width();
-		$("#setDims").append(" Height: ", height);
-		$("#setDims").append(" Width: ", width);
+		var height = $('#setDims').height();
+		var width = $('#setDims').width();
+		$('#setDims').append(' Height: ', height);
+		$('#setDims').append(' Width: ', width);
 
 		/**************************************************
 		Question 5
@@ -187,32 +195,27 @@ Please also write your jquery in a no conflict manner.
 		set a new var to console log each time it is clicked
 		****************************************************/
 
-		$("#clickEventLink").on("click", function(event){
-			$('#clickEventLink').toggleClass("clicked not-clicked");
-			var clickClass = $("#clickEventLink").attr("class");
+		$('#clickEventLink').on('click', function(event){
+			$('#clickEventLink').toggleClass('clicked not-clicked');
+			var clickClass = $('#clickEventLink').attr('class');
 			console.log(clickClass);
 		});
 
 		/***************************************************
 		Question 6
 		****************************************************/
-		function loadJSON(callback) {
-			var food = new XMLHttpRequest();
-			food.overrideMimeType("ajax_return");
-			food.open('GET', 'my_data.json', true);
-			food.onreadystatechange = function () {
-				if (food.readyState == 4 && food.status == "200") {
-					callback(food.responseText);
-				}
-			};
-			food.send(null);
-		}
-
-		function init() {
-			loadJSON(function(res){
-				var json = JSON.parse(res);
-			});
-		}
+		$.ajax({
+			url: 'ajax_return.html',
+			type: 'GET',
+			context: document.body,
+			contentType: "application/json",
+			success: function(res) {
+				$('#jsonResponse').append(res);
+			}, 
+			failure: function(res) {
+				console.log('JSON response failed');
+			}
+		});
 
 	});
 

@@ -44,24 +44,30 @@
 	display: inline;
 }
 
+#infoMainText {
+ width: 50%;
+ float: right;
+}
+
 #realtorImage {
-	height: 280px;
-	width: 200px;
+
+
 }
 
 ul li {
 	text-decoration: none;
 }
 
-#phoneFooter {
-	float: left;
-	clear: both;
-	display: inline;
+.contactMe {
+	background-color: #EEEEEE;
 }
 
-#footerSite {
-	clear: both;
-	display: inline;
+#leftFooter {
+	text-align: left;
+}
+
+#rightFooter {
+	text-align: right;
 }
 
 footer {
@@ -69,6 +75,6 @@ footer {
 	color: white;
 	font-size: 12px;
 	letter-spacing: 1px;
-	display: inline;
+	display: block;
+	list-style-type: none;
 }
-
