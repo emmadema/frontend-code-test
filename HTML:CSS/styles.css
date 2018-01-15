@@ -14,6 +14,13 @@
 	color: #3c7177;
 }
 
+button {
+	color: white;
+	background-color: #3c7177;
+	border-radius: 2px;
+	border: none;
+}
+
 #topBarList {
 	display: inline;
 	list-style: none;
