@@ -203,14 +203,14 @@ Please also write your jquery in a no conflict manner.
 
 		/***************************************************
 		Question 6
+		
 		****************************************************/
 		$.ajax({
 			url: 'ajax_return.html',
-			type: 'GET',
-			context: document.body,
-			contentType: "application/json",
+			dataType: "jsonp",
 			success: function(res) {
-				$('#jsonResponse').append(res);
+				var list = JSON.parse($(res).html());
+				$('#jsonResponse').append(list);
 			}, 
 			failure: function(res) {
 				console.log('JSON response failed');

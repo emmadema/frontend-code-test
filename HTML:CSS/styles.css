@@ -1,3 +1,5 @@
+
+
 #mainLogo {
 	height: 80px;
 	margin: 10px 30px;
@@ -20,8 +22,8 @@
 }
 
 #textBox {
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 5%;
+	margin-right: 1%;
 }
 
 .search{
@@ -31,6 +33,7 @@
 	border-color: #3c7177;
 	color: white;
 	font-size: 15px;
+	margin-right: 1%;
 }
 
 #searchBarList{
@@ -50,16 +53,21 @@
 }
 
 #realtorImage {
-
+	height: 250px;
+	margin-left: 5%;
 
 }
 
-ul li {
-	text-decoration: none;
+#contactInfoList {
+	list-style: none;
 }
 
 .contactMe {
 	background-color: #EEEEEE;
+}
+
+#mainText {
+	margin-left: 5%;
 }
 
 #leftFooter {
