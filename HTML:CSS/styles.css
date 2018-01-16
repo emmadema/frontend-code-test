@@ -74,6 +74,13 @@ button {
  Contact Me
 ***********/
 
+#contactMeButton {
+	border-radius: 2px;
+	padding: 8px 60px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
 .contactMe {
 	background-color: #EEEEEE;
 }
