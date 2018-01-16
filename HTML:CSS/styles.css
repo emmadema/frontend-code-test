@@ -12,14 +12,10 @@ button {
    Header
 ***********/
 
-#logoNav {
+.logoNav {
 	color: black;
 	font-size: 15px;
-}
-
-#mainLogo {
-	height: 80px;
-	margin: 10px 30px;
+	text-decoration: none;
 }
 
 #nav {
@@ -28,12 +24,15 @@ button {
 	color: #3c7177;
 }
 
-
-
-#topBarList {
-	display: inline;
-	list-style: none;
+#mainLogo {
+	height: 80px;
+	margin: 10px 30px;
 }
+
+/***********
+ Search Bar
+***********/
+
 .searchBar{
 	background-color: #AAAAAA;
 	font-size: 10px;
@@ -66,9 +65,21 @@ button {
 	display: inline;
 }
 
+/***********
+ Contact Me
+***********/
+
+.contactMe {
+	background-color: #EEEEEE;
+}
+
 #realtorImage {
 	height: 250px;
 	margin-left: 5%;
+
+}
+
+.socialLinks {
 
 }
 
@@ -76,34 +87,24 @@ button {
 	list-style: none;
 }
 
-.contactMe {
-	background-color: #EEEEEE;
-}
+
 
 /**************
    Main Info
 **************/
+
+#mainText {
+	margin-left: 5%;
+}
 
 #infoMainText {
  width: 50%;
  float: right;
 }
 
-#mainText {
-	margin-left: 5%;
-}
-
 /*************
 	Footer 
 *************/
-
-#leftFooter {
-	text-align: left;
-}
-
-#rightFooter {
-	text-align: right;
-}
 
 footer {
 	background-color: #3c7177;
@@ -113,3 +114,12 @@ footer {
 	display: block;
 	list-style-type: none;
 }
+
+#leftFooter {
+	text-align: left;
+}
+
+#rightFooter {
+	text-align: right;
+}
+
