@@ -29,6 +29,11 @@ button {
 	margin: 10px 30px;
 }
 
+.nav-link {
+	text-decoration: none;
+	color: black;
+}
+
 /***********
  Search Bar
 ***********/
@@ -86,8 +91,6 @@ button {
 #contactInfoList {
 	list-style: none;
 }
-
-
 
 /**************
    Main Info
