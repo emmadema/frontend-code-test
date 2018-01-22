@@ -104,6 +104,10 @@ button {
    Main Info
 **************/
 
+#mainInfoSelector {
+	text-align: center;
+}
+
 #mainText {
 	
 }
