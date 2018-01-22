@@ -15,35 +15,40 @@
 <body>
 	
 <!--Header-->
-		<div class="row" id="nav">
-			 <picture>
-              <source media="(min-width: 576px)" srcset="./Assets/SVGs/TEN-logo.svg" />
-              <img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Logo" id="mainLogo" />
-            </picture>
-			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
-				<img src="./Assets/SVGs/contact.svg">
-				<h6>Contact</h6>
+	<header>
+		<div class="conatiner-fluid">
+			<div class="row" id="nav">
+				<div class="logo col-md-4 col-lg-3">
+				 <picture>
+		              <source media="(min-width: 576px)" srcset="./Assets/SVGs/TEN-logo.svg" />
+		              <img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Logo" id="mainLogo" />
+	            </picture>
+	        	</div>
+				<div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
+					<img src="./Assets/SVGs/contact.svg">
+					<h6>Contact</h6>
+				</div>
+				<div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
+					<img src="./Assets/SVGs/account.svg">
+					<h6>Account</h6>
+				</div>
+				<ul class="nav col-lg-5 col-md-6">
+					<li class="nav-item logoNav">
+						<a class="nav-link active" href="http://www.emmademango.co/">SEARCH</a>
+					</li>
+					<li class="nav-item logoNav">
+						<a class="nav-link active" href="https://www.linkedin.com/in/emma-demango/">COMMUNITIES</a>
+					</li>
+					<li class="nav-item logoNav">
+						<a class="nav-link active" href="https://github.com/emmadema">SERVICES</a>
+					</li>
+					<li class="nav-item logoNav">
+						<a class="nav-link active" href="http://www.emmademango.co/">ABOUT US</a>
+					</li>
+				</ul>
 			</div>
-			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
-				<img src="./Assets/SVGs/account.svg">
-				<h6>Account</h6>
-			</div>
-			<ul class="nav col-lg-5 col-md-6">
-				<li class="nav-item logoNav">
-					<a class="nav-link active" href="http://www.emmademango.co/">SEARCH</a>
-				</li>
-				<li class="nav-item logoNav">
-					<a class="nav-link active" href="https://www.linkedin.com/in/emma-demango/">COMMUNITIES</a>
-				</li>
-				<li class="nav-item logoNav">
-					<a class="nav-link active" href="https://github.com/emmadema">SERVICES</a>
-				</li>
-				<li class="nav-item logoNav">
-					<a class="nav-link active" href="http://www.emmademango.co/">ABOUT US</a>
-				</li>
-			</ul>
 		</div>
-
+	</header>
 
 <!--Search Bar-->
 
@@ -116,33 +121,46 @@
 </div>
 
 <!--Footer-->
+
 	<footer class="footer fixed-bottom row justtify-content-around">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-4" id="leftFooter">
-			<img src="./Assets/SVGs/contact.svg">1-800-234-4567</img>
-			<p>5678 Main Street, Denver, CO 80123</p>
-			<div class="socialLinks">
-				<img src="./Assets/SVGs/facebook.svg">
-				<img src="./Assets/SVGs/linkedin.svg">
-				<img src="./Assets/SVGs/twitter.svg">
-				<img src="./Assets/SVGs/youtube.svg">
-				<img src="./Assets/SVGs/instagram.svg">
-			</div>
-		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-4" id="rightFooter">
-			<ul class="nav">
-				<li class="nav-item">
-					<a class="nav-link active" href="http://www.emmademango.co/">Site Map</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="https://www.linkedin.com/in/emma-demango/">Tearms of Use</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link active" href="https://github.com/emmadema">Privacy Policy</a>
-				</li>
-			</ul>
-			<p>&copy;2016 TEN Realty, All Rights Reserved.</p>
-			<img src="./Assets/SVGs/realtor.svg">
-			<img src="./Assets/SVGs/equal-housing.svg">
+		<div class="container footer-container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-7 col-xs-4" id="leftFooter">
+					<div class="col-12">
+						<img src="./Assets/SVGs/contact.svg">1-800-234-4567</img>
+					</div>
+					<div class="col-12">
+						<p>5678 Main Street, Denver, CO 80123</p>
+					</div>
+					<div class="socialLinks col-12 col-sm-6">
+						<img src="./Assets/SVGs/facebook.svg">
+						<img src="./Assets/SVGs/linkedin.svg">
+						<img src="./Assets/SVGs/twitter.svg">
+						<img src="./Assets/SVGs/youtube.svg">
+						<img src="./Assets/SVGs/instagram.svg">
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-5 col-xs-4 no-padding margin-top-9" id="rightFooter">
+					<ul class="nav col-12 list-inline">
+						<li class="nav-item">
+							<a class="nav-link active" href="http://www.emmademango.co/">Site Map</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="https://www.linkedin.com/in/emma-demango/">Tearms of Use</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="https://github.com/emmadema">Privacy Policy</a>
+						</li>
+					</ul>
+					<div class="col-12">
+						<p>&copy;2016 TEN Realty, All Rights Reserved.</p>
+					</div>
+					<div class="col-12">
+						<img src="./Assets/SVGs/realtor.svg">
+						<img src="./Assets/SVGs/equal-housing.svg">
+					</div>
+				</div>
+			</div>	
 		</div>
 	</footer>
 </div>
