@@ -2,23 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Ten Realty</title>
 	<!--Internal Stylesheets-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 	<!--External Stylesheets-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+	 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  	<link rel="shortcut icon" href="./Assets/Favicon/favicon.ico" />
 </head>
 <body>
 	
 <!--Header-->
 		<div class="row" id="nav">
-			<img class="col-lg-3 col-md-4 col-sm-3 col-xs-1" id="mainLogo" src="./Assets/SVGs/TEN-logo.svg">
-			<div class="col-lg-1 col-md-1 col-sm-2">
+			 <picture>
+              <source media="(min-width: 576px)" srcset="./Assets/SVGs/TEN-logo.svg" />
+              <img src="./Assets/SVGs/TEN-logo-mark.svg" alt="Logo" id="mainLogo" />
+            </picture>
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
 				<img src="./Assets/SVGs/contact.svg">
 				<h6>Contact</h6>
 			</div>
-			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-">
+			<div class="col-lg-1 col-md-1 col-sm-2 col-xs-1">
 				<img src="./Assets/SVGs/account.svg">
 				<h6>Account</h6>
 			</div>
@@ -51,6 +57,7 @@
 		</ul>
 	</div>
 
+<div class="conatiner-fluid">
 <!--Contact Me-->
 
 	<div class="contactMe row">
@@ -106,6 +113,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 
 <!--Footer-->
 	<footer class="footer fixed-bottom row justtify-content-around">
@@ -132,7 +140,7 @@
 					<a class="nav-link active" href="https://github.com/emmadema">Privacy Policy</a>
 				</li>
 			</ul>
-			<p>@2016 TEN Realty, All Rights Reserved.</p>
+			<p>&copy;2016 TEN Realty, All Rights Reserved.</p>
 			<img src="./Assets/SVGs/realtor.svg">
 			<img src="./Assets/SVGs/equal-housing.svg">
 		</div>
