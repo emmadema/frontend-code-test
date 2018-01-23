@@ -70,6 +70,8 @@ button {
 .searchItem {
 	font-size: 15px;
 	display: inline;
+	text-decoration: none;
+	color: white;
 }
 
 /***********
