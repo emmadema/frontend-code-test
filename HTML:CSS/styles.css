@@ -67,10 +67,9 @@ button {
 	list-style: none;
 }
 
-.searchItem {
+.searchItem a {
 	font-size: 15px;
 	display: inline;
-	text-decoration: none;
 	color: white;
 }
 
