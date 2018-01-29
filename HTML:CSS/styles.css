@@ -40,6 +40,13 @@ button {
 	text-align: right;
 }
 
+.topContactAccount {
+	text-align: center;
+	display: flex;
+	position: absolute;
+	align-items: center;
+}
+
 /***********
  Search Bar
 ***********/
@@ -93,7 +100,7 @@ button {
 }
 
 #realtorImage {
-	height: 250px
+	height: 60%;
 }
 
 .socialLinks {
